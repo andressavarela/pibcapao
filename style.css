@@ -258,3 +258,54 @@ nav.show div.icon-close {
 }
 
 /* Como chegar */
+
+#location {
+  background: white;
+}
+
+#location .container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#location .image {
+  position: absolute;
+}
+
+#location .square {
+  width: 287px;
+  height: 180px;
+  background: var(--base-color-second);
+  border-radius: 0.25rem;
+  position: absolute;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#location .text-box {
+  position: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8.7px;
+}
+
+#location .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+#location .text-2 {
+  margin-top: 5px;
+}
+
+#location .button {
+  margin-top: 5px;
+}
