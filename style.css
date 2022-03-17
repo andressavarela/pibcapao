@@ -32,6 +32,7 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  --base-color-second-light: hsl(var(--hue) 65% 88%);
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -272,7 +273,11 @@ nav.show div.icon-close {
 }
 
 #location .image {
-  position: absolute;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #location .square {
@@ -280,8 +285,8 @@ nav.show div.icon-close {
   height: 180px;
   background: var(--base-color-second);
   border-radius: 0.25rem;
+  padding: 2.5rem;
   position: absolute;
-  margin-top: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -300,10 +305,6 @@ nav.show div.icon-close {
 #location .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-}
-
-#location .text-2 {
-  margin-top: 5px;
 }
 
 #location .button {
