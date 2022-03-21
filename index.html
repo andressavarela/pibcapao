@@ -26,11 +26,11 @@
         <!--menu-->
         <div class="menu">
           <ul class="grid">
-            <li><a class="title" href="#header">Início</a></li>
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre nós</a></li>
             <li><a class="title" href="#location">Como chegar</a></li>
-            <li><a class="title" href="#aboutus">Sobre nós</a></li>
-            <li><a class="title" href="#keepup">Fique por dentro</a></li>
             <li><a class="title" href="#contactus">Fale conosco</a></li>
+            <li><a class="title" href="#links">Redes sociais</a></li>
           </ul>
         </div>
         <div class="toggle icon-menu"></div>
@@ -38,12 +38,15 @@
       </nav>
     </header>
     <!-- corpo do site propriamente -->
-    <main>
+    <main id="home">
       <!-- sobre nós -->
-      <section class="section" id="aboutus">
+      <section class="section" id="about">
         <div class="container grid">
           <div class="image">
-            <img src="#" alt="Culto na PIB Capão Redondo" />
+            <img
+              src="assets/images/culto_pibcapao.jpeg"
+              alt="Culto na PIB Capão Redondo"
+            />
           </div>
           <div class="text">
             <h2 class="title">Sobre nós</h2>
@@ -60,11 +63,18 @@
               doloribus distinctio excepturi minima eius dolore! Perferendis
               laborum illo aspernatur repellendus ipsum.
             </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              possimus suscipit itaque, voluptates soluta nobis error neque
+              nulla dolores ipsa necessitatibus reprehenderit deserunt impedit
+              eveniet quo placeat adipisci, laboriosam debitis.
+            </p>
           </div>
         </div>
       </section>
       <div class="divider-2"></div>
-      <!-- como chegar -->
+      <!-- LOCATION -->
       <section class="section" id="location">
         <div class="container grid">
           <div class="image">
@@ -73,50 +83,37 @@
               alt="Fachada da PIB em Capão Redondo"
             />
           </div>
-          <div class="square">
-            <div class="text-box">
-              <p class="text">
-                <i class="icon-map-pin"></i>R. Luiz Augusto Ferreira, 1187
-              </p>
-              <a
-                href="https://goo.gl/maps/H2xrxDzgLoBMN3KQ7"
-                class="button"
-                target="_blank"
-                >Como chegar</a
-              >
-            </div>
+
+          <div class="text">
+            <h2 class="title">Domingo</h2>
+            <p class="text">
+              <abbr title="Escola Bíblica Dominical">EBD</abbr> às 10h | Culto
+              às 18h
+            </p>
+          </div>
+
+          <div class="text-box">
+            <a
+              href="https://goo.gl/maps/H2xrxDzgLoBMN3KQ7"
+              class="button"
+              target="_blank"
+              ><i class="icon-map-pin"></i>Como chegar</a
+            >
           </div>
         </div>
       </section>
       <div class="divider-1"></div>
-      <!-- fique por dentro -->
-      <section class="section" id="keepup">
-        <div class="container grid">
-          <div class="text">
-            <h2 class="tittle">Domingo</h2>
-            <p class="text">EBD às 10h</p>
-            <p class="text">Culto às 18h</p>
-            <br />
-            <p class="text">
-              Devido à pandemia, nossas atividades durante a semana estão
-              suspensas. Nos envie uma <a href="#contactus">mensagem</a> para
-              mais detalhes!
-            </p>
-          </div>
-        </div>
-      </section>
-      <div class="divider-2"></div>
       <!-- fale conosco -->
       <section class="section" id="contactus">
         <div class="container grid">
           <div class="text">
-            <h2 class="title">Entre em contato com a gente!</h2>
+            <h2 class="title">Fale conosco!</h2>
             <p>
               Envie uma mensagem para a igreja! Queremos tirar suas dúvidas e
               auxiliar como possível.
             </p>
             <a
-              href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi!"
+              href="https://api.whatsapp.com/send?phone=+5511985822622&text=Oi!"
               class="button"
               target="_blank"
               ><i class="icon-whatsapp"></i> Entrar em contato</a
@@ -125,25 +122,36 @@
         </div>
       </section>
 
-      <div class="divider-1"></div>
+      <div class="divider-2"></div>
     </main>
     <!-- RODAPÉ -->
     <footer class="section">
       <div class="container grid">
         <div class="logo-background">
-          <a class="logo logo-alt" href="#header">
+          <a class="logo logo-alt" href="#home">
             <img src="/assets/images/logo_pibcapao.png" />
           </a>
+          <p class="text">
+            <a href="#location"><i class="icon-map-pin"></i></a> R. Luiz Augusto
+            Ferreira, 263
+          </p>
+          <p><i class="icon-phone"></i> 11 98582-2622</p>
+          <p class="text"><i class="icon-mail"></i> pibcapao@gmail.com</p>
         </div>
 
-        <div class="social grid">
-          <a href="https://instagram.com" target="_blank">
+        <div class="social grid" id="links">
+          <a href="https://www.instagram.com/pib_capaoredondo/" target="_blank">
             <i class="icon-instagram"></i>
           </a>
-          <a href="https://facebook.com" target="_blank">
+          <a
+            href="https://pt-br.facebook.com/primeiraigrejabatistaemcapaoredondo/"
+            target="_blank"
+          >
             <i class="icon-facebook"></i
           ></a>
-          <a href="https://youtube.com" target="_blank"
+          <a
+            href="https://www.youtube.com/channel/UCgjptGrO4XpGVWSnxtD_Lbw"
+            target="_blank"
             ><i class="icon-youtube"></i
           ></a>
         </div>

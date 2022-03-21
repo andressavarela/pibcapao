@@ -1,4 +1,4 @@
-/*  abre e fecha o menu quando clicar no icone: hamburguer e x */
+/*  abre e fecha o menu */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -21,12 +21,12 @@ for (const link of links) {
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
-function changeHeaderWhenScroll() {
+window.addEventListener('scroll', function () {
   if (window.scrollY >= navHeight) {
-    // scroll é maior que a altura do header
+    //scroll é maior q altura do header
     header.classList.add('scroll')
   } else {
-    // menor que a altura do header
+    // scroll é menor q altura do header
     header.classList.remove('scroll')
   }
-}
+})

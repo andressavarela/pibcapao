@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 ul {
@@ -18,21 +19,19 @@ img {
   height: auto;
 }
 
-/*==== Adicionar variáveis de cor ================== */
+/*==== Variáveis ================== */
 :root {
   --header-height: 4.5rem;
-
   /* colors */
-  --hue: 45;
+  --hue: 14;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 100% 53%);
+  --base-color: hsl(var(--hue) 88% 56%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
-  --base-color-second-light: hsl(var(--hue) 65% 88%);
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -258,39 +257,79 @@ nav.show div.icon-close {
   top: 1.5rem;
 }
 
-/* Como chegar */
+/* SOBRE NÓS */
+
+#about {
+  background: white;
+}
+
+#about .container {
+  margin: 0;
+}
+
+#about .image {
+  position: relative;
+}
+
+#about .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+}
+
+#about .image img {
+  position: relative;
+}
+
+#about .image img,
+#about .image::before {
+  border-radius: 0.25rem;
+}
+
+#about .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* COMO CHEGAR */
 
 #location {
   background: white;
+  overflow: hidden;
 }
 
 #location .container {
   margin: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 #location .image {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 
-#location .square {
-  width: 287px;
-  height: 180px;
+#location .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
   background: var(--base-color-second);
-  border-radius: 0.25rem;
-  padding: 2.5rem;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  top: -16.8%;
+  left: 16.7%;
+  z-index: 0;
+}
+
+#location .image img {
+  position: relative;
+  right: 2.93rem;
+}
+
+#location .image img,
+#location .image::before {
+  border-radius: 0.25rem;
 }
 
 #location .text-box {
@@ -305,8 +344,17 @@ nav.show div.icon-close {
 #location .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  text-align: center;
 }
 
-#location .button {
-  margin-top: 5px;
+#home .text h1 {
+  margin-bottom: 1rem;
 }
+
+#home .text p {
+  margin-bottom: 2rem;
+}
+
+/* FALE CONOSCO */
+
+/* LINKS E REDES */
