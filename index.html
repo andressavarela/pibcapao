@@ -26,11 +26,10 @@
         <!--menu-->
         <div class="menu">
           <ul class="grid">
-            <li><a class="title" href="#home">Início</a></li>
             <li><a class="title" href="#about">Sobre nós</a></li>
             <li><a class="title" href="#location">Como chegar</a></li>
-            <li><a class="title" href="#contactus">Fale conosco</a></li>
-            <li><a class="title" href="#links">Redes sociais</a></li>
+            <li><a class="title" href="#contact">Fale conosco</a></li>
+            <li><a class="title" href="#social">Redes sociais</a></li>
           </ul>
         </div>
         <div class="toggle icon-menu"></div>
@@ -86,13 +85,10 @@
 
           <div class="text">
             <h2 class="title">Domingo</h2>
-            <p class="text">
+            <p class="subtitle">
               <abbr title="Escola Bíblica Dominical">EBD</abbr> às 10h | Culto
               às 18h
             </p>
-          </div>
-
-          <div class="text-box">
             <a
               href="https://goo.gl/maps/H2xrxDzgLoBMN3KQ7"
               class="button"
@@ -103,8 +99,8 @@
         </div>
       </section>
       <div class="divider-1"></div>
-      <!-- fale conosco -->
-      <section class="section" id="contactus">
+      <!-- FALE CONOSCO -->
+      <section class="section" id="contact">
         <div class="container grid">
           <div class="text">
             <h2 class="title">Fale conosco!</h2>
@@ -119,27 +115,31 @@
               ><i class="icon-whatsapp"></i> Entrar em contato</a
             >
           </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li>
+                <i class="icon-mail"></i
+                ><a href="mailto:pibcapao@gmail.com"> pibcapao@gmail.com</a>
+              </li>
+              <li>
+                <i class="icon-phone"></i
+                ><a href="tel:+5511985822622"> 11 98582-2622</a>
+              </li>
+              <li>
+                <i class="icon-map-pin"></i> R. Luiz Augusto Ferreira, 263
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <div class="divider-2"></div>
     </main>
     <!-- RODAPÉ -->
-    <footer class="section">
+    <footer class="section" id="social">
       <div class="container grid">
-        <div class="logo-background">
-          <a class="logo logo-alt" href="#home">
-            <img src="/assets/images/logo_pibcapao.png" />
-          </a>
-          <p class="text">
-            <a href="#location"><i class="icon-map-pin"></i></a> R. Luiz Augusto
-            Ferreira, 263
-          </p>
-          <p><i class="icon-phone"></i> 11 98582-2622</p>
-          <p class="text"><i class="icon-mail"></i> pibcapao@gmail.com</p>
-        </div>
-
-        <div class="social grid" id="links">
+        <div class="social grid">
           <a href="https://www.instagram.com/pib_capaoredondo/" target="_blank">
             <i class="icon-instagram"></i>
           </a>
@@ -155,8 +155,18 @@
             ><i class="icon-youtube"></i
           ></a>
         </div>
+
+        <div class="brand">
+          <a href="#home" class="img_logo"
+            ><img src="/assets/images/logo_pibcapao.png"
+          /></a>
+        </div>
       </div>
     </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- main.js -->
     <script src="main.js"></script>
   </body>

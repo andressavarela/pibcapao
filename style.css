@@ -174,7 +174,7 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a.active {
+nav ul li a:active {
   color: var(--base-color);
 }
 
@@ -277,8 +277,8 @@ nav.show div.icon-close {
   width: 100%;
   background: var(--base-color-second);
   position: absolute;
-  top: -8.3%;
-  left: -33%;
+  top: -10.3%;
+  left: -18%;
   z-index: 0;
 }
 
@@ -318,7 +318,7 @@ nav.show div.icon-close {
   background: var(--base-color-second);
   position: absolute;
   top: -16.8%;
-  left: 16.7%;
+  left: 10.7%;
   z-index: 0;
 }
 
@@ -332,29 +332,244 @@ nav.show div.icon-close {
   border-radius: 0.25rem;
 }
 
-#location .text-box {
-  position: inherit;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 8.7px;
-}
-
 #location .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  padding: 8.7px;
   text-align: center;
 }
 
-#home .text h1 {
+#location .subtitle {
+  font-size: var(--subtitle-font-size);
+}
+
+#location .text h1 {
   margin-bottom: 1rem;
 }
 
-#home .text p {
+#location .text p {
   margin-bottom: 2rem;
+}
+
+#location .button i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
 }
 
 /* FALE CONOSCO */
 
+#contact .grid {
+  gap: 4rem;
+}
+
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i,
+#contact ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li i {
+  color: var(--base-color);
+}
+
+#contact ul li a[href^='tel'] {
+  color: inherit;
+  text-decoration: none;
+}
+
+#contact ul li a[href^='mailto'] {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* LINKS E REDES */
+
+footer {
+  background-color: var(--base-color-second);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer.section {
+  padding: 4rem 0;
+}
+
+footer .img_logo {
+  display: inline-block;
+  width: 20rem;
+  margin-top: 2.5rem;
+}
+
+footer i {
+  font-size: 2.7rem;
+  color: var(--base-color);
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .social a {
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-4px);
+}
+
+/* SETA */
+
+.back-to-top {
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 0.5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+
+  transform: translateY(0);
+}
+/*=====MEDIA QUERIES=======*/
+/* extra large devices: 1200 > */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .button {
+    height: 3.125rem;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  main {
+    margin-top: var(--header-height);
+  }
+
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  #about .image {
+    order: 0;
+  }
+
+  #about .text {
+    order: 1;
+  }
+
+  #location .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #location .image {
+    order: 0;
+    max-width: 40rem;
+  }
+
+  #location .text {
+    order: 1;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .img_logo {
+    max-width: 20rem;
+  }
+}
+/* large devices: 1023 >*/
+/* large devices: 992 > */
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
+  }
+}
+/* medium devices: 767 >*/
