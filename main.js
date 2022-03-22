@@ -1,4 +1,3 @@
-/*  abre e fecha o menu */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -8,7 +7,6 @@ for (const element of toggle) {
   })
 }
 
-/* quando clicar em um item do menu, esconder o menu */
 const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
@@ -17,20 +15,16 @@ for (const link of links) {
   })
 }
 
-/* mudar o header da página quando der scroll */
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 function changeHeaderWhenScroll() {
   if (window.scrollY >= navHeight) {
-    //scroll é maior q altura do header
     header.classList.add('scroll')
   } else {
-    // scroll é menor q altura do header
     header.classList.remove('scroll')
   }
 }
 
-// Scroll reveal
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -44,10 +38,9 @@ scrollReveal.reveal(
   #contact .text, #contact .links,
   footer .social, footer .brand
   `,
-  { interval: 100 }
+  { interval: 80 }
 )
 
-/* botão voltar para o topo */
 const backToTopButton = document.querySelector('.back-to-top')
 function backToTop() {
   if (window.scrollY >= 560) {
