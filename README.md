@@ -8,4 +8,4 @@ Um simples site para minha igreja.
   <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 </div>
 
-## :sparkles: <a href="https://pibcapaoredondo.vercel.app/" target"_blank">Clique aqui</a> para navegar por ele! :sparkles:
+<h2>✨ <a href="https://pibcapaoredondo.vercel.app/" target"_blank">Clique aqui</a> para navegar por ele! ✨</h2>
