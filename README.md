@@ -1,5 +1,5 @@
 # PIB em Capão Redondo
-Um site para minha igreja.
+Um simples site para minha igreja.
 
 
 <div style="display:inline-block">
@@ -8,4 +8,4 @@ Um site para minha igreja.
   <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 </div>
 
-## :sparkles:[Clique aqui](https://pibcapaoredondo.vercel.app/):sparkles: para navegar por ele!
+## :sparkles: [Clique aqui](https://pibcapaoredondo.vercel.app/) para navegar por ele! :sparkles:
