@@ -36,6 +36,7 @@ scrollReveal.reveal(
   `#about .image, #about .text, 
   #location .image, #location .text,
   #contact .text, #contact .links,
+  #contribute .card,
   footer .social, footer .brand
   `,
   { interval: 80 }

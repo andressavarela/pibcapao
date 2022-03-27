@@ -395,6 +395,45 @@ nav.show div.icon-close {
   text-decoration: none;
 }
 
+/*====  CONTRIBUA ============================ */
+.cards.grid {
+  gap: 1.5rem;
+}
+
+#contribute img {
+  max-width: 6.5rem;
+}
+
+#contribute .card .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.card {
+  padding: 3.625rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 5rem;
+  color: var(--base-color);
+}
+
+.card .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
 /* LINKS E REDES */
 
 footer {
@@ -478,6 +517,19 @@ footer .social a:hover {
     padding: 10rem 0;
   }
 
+  .section header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .button {
     height: 3.125rem;
   }
@@ -548,6 +600,26 @@ footer .social a:hover {
 
   #contact .text {
     max-width: 25rem;
+  }
+
+  #contribute .text {
+    max-width: 25rem;
+  }
+
+  #contribute .card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.8rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   footer.section {
@@ -576,6 +648,19 @@ footer .social a:hover {
     padding: 10rem 0;
   }
 
+  .section header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .button {
     height: 3.125rem;
   }
@@ -646,6 +731,22 @@ footer .social a:hover {
 
   #contact .text {
     max-width: 25rem;
+  }
+
+  #contribute .card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.8rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   footer.section {
@@ -674,6 +775,19 @@ footer .social a:hover {
     padding: 10rem 0;
   }
 
+  .section header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .button {
     height: 3.125rem;
   }
@@ -746,6 +860,22 @@ footer .social a:hover {
     max-width: 25rem;
   }
 
+  #contribute .card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.8rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   footer.section {
     padding: 3.75rem 0;
   }
@@ -759,5 +889,3 @@ footer .social a:hover {
     max-width: 20rem;
   }
 }
-
-/* medium devices: 767 >*/
