@@ -574,6 +574,7 @@ footer .social a:hover {
 
   #about .text {
     order: 1;
+    margin-top: -2.8rem;
   }
 
   #location .container {
@@ -591,6 +592,8 @@ footer .social a:hover {
     order: 1;
     max-width: 24rem;
     text-align: left;
+    margin-top: -1.4rem;
+
   }
 
   #contact .container {
@@ -705,6 +708,7 @@ footer .social a:hover {
 
   #about .text {
     order: 1;
+    margin-top: -2.8rem;
   }
 
   #location .container {
@@ -722,6 +726,7 @@ footer .social a:hover {
     order: 1;
     max-width: 24rem;
     text-align: left;
+    margin-top: -1.4rem;
   }
 
   #contact .container {
@@ -832,6 +837,7 @@ footer .social a:hover {
 
   #about .text {
     order: 1;
+    margin-top: -2.8rem;
   }
 
   #location .container {
@@ -849,6 +855,7 @@ footer .social a:hover {
     order: 1;
     max-width: 24rem;
     text-align: left;
+    margin-top: -1.4rem;
   }
 
   #contact .container {
